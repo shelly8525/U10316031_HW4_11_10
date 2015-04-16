@@ -28,4 +28,8 @@ public class MyStack<s> extends ArrayList<s> {
 	 public void push(s o){
 		add(o); 
 	 }
+	 
+	 public static void main(String[] args){
+		 
+	 }
 }
