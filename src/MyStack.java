@@ -13,7 +13,15 @@ public class MyStack<s> extends ArrayList<s> {
 		}
 	}
 	
-	publicint getSize(){
+	public int getSize(){
 		return 
 	}
+	
+	 public s peek() {
+	        return get(size() - 1);
+	 }
+	 
+	 public s pop() {
+	        return remove(size() - 1);
+	 }
 }
