@@ -24,4 +24,8 @@ public class MyStack<s> extends ArrayList<s> {
 	 public s pop() {
 	        return remove(size() - 1);
 	 }
+	 
+	 public void push(s o){
+		add(o); 
+	 }
 }
