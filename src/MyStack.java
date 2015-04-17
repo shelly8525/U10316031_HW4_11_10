@@ -1,35 +1,30 @@
 import java.util.ArrayList;
-public class MyStack<String> extends ArrayList<String> {
-	public Mystack(){
-		super();
-	}
-	
+
+class MyStack extends ArrayList<String> {
 	public boolean isEmpty(){
-		if(this.isEmpty()){
-			return true;
-		}
-		else{
-			return false;
-		}
+		return super.isEmpty();
 	}
 	
 	public int getSize(){
-		return 
+		return super.size();
 	}
 	
 	 public String peek() {
-	        return get(size() - 1);
+		 return super.get(getSize() - 1);
 	 }
 	 
 	 public String pop() {
-	        return remove(size() - 1);
+		 String o = super.get(getSize() - 1);
+		 super.remove(getSize() - 1);
+		 return o;
 	 }
 	 
-	 public void push(s o){
-		add(o); 
+	 public void push(String o){
+		super.add(o); 
 	 }
 	 
-	 public static void main(String[] args){
-		 
+	 @Override
+	 public String toString(){
+		 return "stack:"+super.toString();
 	 }
 }
