@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class MyStack<s> extends ArrayList<s> {
+public class MyStack<String> extends ArrayList<String> {
 	public Mystack(){
 		super();
 	}
@@ -17,11 +17,11 @@ public class MyStack<s> extends ArrayList<s> {
 		return 
 	}
 	
-	 public s peek() {
+	 public String peek() {
 	        return get(size() - 1);
 	 }
 	 
-	 public s pop() {
+	 public String pop() {
 	        return remove(size() - 1);
 	 }
 	 
